@@ -1,0 +1,7 @@
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+Chain = "8be319e6-bccf-4806-a6f7-6fae938471bc"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+GLM = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
+GLMakie = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
+StatsModels = "3eaba693-59b7-5ba5-a881-562e759f1c8d"
