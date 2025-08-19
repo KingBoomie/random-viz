@@ -14,6 +14,7 @@ analysis/plots from an experiment on detecting sub-degree angular differences.
 back-of-the-envelope sand battery sim for seasonal heat storage.
 
 ### eu cyber plots (r)
+simple quick analysis of EU cyber attacks data 
 
 ### dnd stat viz (julia): throwaway 3d scatter + glm on a d&d-ish dataset.
 
