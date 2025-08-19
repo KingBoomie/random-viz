@@ -1,14 +1,14 @@
-human angle perception analysis
+# human angle perception analysis
 
 - goal: analyze whether tiny deviations from 90° are detectable; look at accuracy vs reaction time, learning/fatigue, etc.
 - stack: r (ggplot2, dplyr, tidyr, zoo, jsonlite).
 
-run
+## run
 
 - from this folder (paths assume repo root as wd):
   - `Rscript analyze.R` (reads `results-0.2deg.json`, writes `processed_angle_data.csv` and pngs).
 
-outputs
+## outputs
 
 - `plot1_accuracy_over_time.png`: accuracy vs reaction time with ci.
 - `plot2_moving_average.png`: moving avg accuracy over time.
@@ -18,7 +18,6 @@ outputs
 - `plot6_accuracy_by_deviation.png`: accuracy vs |angle-90°|.
 - console prints summary stats and hypotheses sanity checks.
 
-caveats
+## caveats
 
-- the script assumes stimulus/response alternation order in the json; if your export schema changes, the pairing will break.
 - no multiple-comparison corrections; treat plots as exploratory.

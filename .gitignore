@@ -12,6 +12,7 @@ wheels/
 # r and julia project noise
 .Rproj.user/
 .Rhistory
+.Rproj
 
 # os/editor
 .DS_Store

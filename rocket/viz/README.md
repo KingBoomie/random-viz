@@ -26,12 +26,3 @@ python -m http.server 8000
 
 Or open `index.html` directly and click "Load sample" then select the file manually if cross-origin blocks the fetch.
 
-## CSV schema
-If you export CSV, headers should be: `t,x,y,z,vx,vy,vz,qx,qy,qz,qw,omx,omy,omz,fuel`.
-
-## Notes
-- Parquet is decoded in-browser using `parquet-wasm` + Arrow JS via CDN.
-- 3D rendering uses Three.js via CDN.
-- Navball auto-binds to the same arrays used by the app (expects `t,vx,vy,vz,qx,qy,qz,qw`), listens to the existing time slider, and also accepts a custom event:
-  - Dispatch `window.dispatchEvent(new CustomEvent('viz:frame', { detail: { i, t, vx,vy,vz, qx,qy,qz,qw } }))` to push a frame explicitly.
-  - Or bind once via `window.Navball.bind({ t,vx,vy,vz,qx,qy,qz,qw })` and call `window.Navball.updateIndex(i)`.
