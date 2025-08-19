@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# r and julia project noise
+.Rproj.user/
+.Rhistory
+
+# generated artifacts
+rocket/rocket_traj.parquet
+*.parquet
+*.csv
+*.png
+
+# os/editor
+.DS_Store
+*.swp
+*.swo
+node_modules/
