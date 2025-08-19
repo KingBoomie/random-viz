@@ -13,12 +13,6 @@ wheels/
 .Rproj.user/
 .Rhistory
 
-# generated artifacts
-rocket/rocket_traj.parquet
-*.parquet
-*.csv
-*.png
-
 # os/editor
 .DS_Store
 *.swp
