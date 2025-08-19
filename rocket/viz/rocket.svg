@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 540" width="160" height="480" aria-label="rocket">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <linearGradient id="finGrad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="noseGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Nose cone -->
+  <path d="M90 10 L140 80 L40 80 Z" fill="url(#noseGrad)" stroke="#0f172a" stroke-width="2"/>
+
+  <!-- Upper body (payload) -->
+  <rect x="45" y="80" width="90" height="170" rx="18" fill="url(#bodyGrad)" stroke="#0f172a" stroke-width="2"/>
+
+  <!-- Mid band -->
+  <rect x="40" y="250" width="100" height="12" rx="6" fill="#64748b" />
+
+  <!-- Lower body (engine + fuel) -->
+  <rect x="45" y="262" width="90" height="170" rx="18" fill="url(#bodyGrad)" stroke="#0f172a" stroke-width="2"/>
+
+  <!-- Fin left -->
+  <path d="M45 360 L5 420 L45 430 Z" fill="url(#finGrad)" />
+  <!-- Fin right -->
+  <path d="M135 360 L175 420 L135 430 Z" fill="url(#finGrad)" />
+  <!-- Fin back (center) -->
+  <path d="M90 360 L75 460 L105 460 Z" fill="url(#finGrad)" />
+
+  <!-- Nozzle -->
+  <path d="M65 432 L115 432 L105 500 L75 500 Z" fill="#111827" />
+
+  <!-- Detail lines -->
+  <g stroke="#334155" stroke-width="1" opacity="0.6">
+    <line x1="60" y1="110" x2="120" y2="110" />
+    <line x1="60" y1="140" x2="120" y2="140" />
+    <line x1="60" y1="170" x2="120" y2="170" />
+    <line x1="60" y1="320" x2="120" y2="320" />
+    <line x1="60" y1="350" x2="120" y2="350" />
+  </g>
+</svg>
